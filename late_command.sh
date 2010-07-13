@@ -10,7 +10,12 @@ apt-get remove --yes --purge network-manager
 # Old GDM
 apt-get --yes install gdm gnome gnome-desktop-environment
 
-# Configuration files XXX
+# Configuration files
+GIT=$(mktemp -d)
+git clone --no-checkout https://github.com/meet/config-solarize-debian-squeeze.git "$GIT"
+mv "$GIT"/.git /
+(cd / && git checkout --force)
+rm -rf "$GIT"
 
 # NFS
 mkdir -p /opt/MEET
