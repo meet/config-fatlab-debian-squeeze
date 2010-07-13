@@ -12,7 +12,7 @@ apt-get --yes install gdm gnome gnome-desktop-environment
 
 # Configuration files
 GIT=$(mktemp -d)
-git clone --no-checkout https://github.com/meet/config-solarize-debian-squeeze.git "$GIT"
+git clone --no-checkout https://github.com/meet/config-fatlab-debian-squeeze.git "$GIT"
 mv "$GIT"/.git /
 (cd / && git checkout --force)
 rm -rf "$GIT"
