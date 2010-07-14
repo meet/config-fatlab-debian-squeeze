@@ -1,0 +1,8 @@
+Setup for fatlab machines running Debian testing
+
+INSTALLATION & SETUP
+
+`solarize` serves a netboot configuration that points here:
+  see http://github.com/meet/config-solarize-debian-squeeze/tree/master/srv/tftp/debian-installer-squeeze/
+
+After netbooting the machine and selecting selecting Install, the process is entirely automated
